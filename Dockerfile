@@ -1,8 +1,6 @@
 FROM alpine:3.7
 
-RUN apt-get update && \
-    apt-get install -y firefox && \
-    apt-get install -y openjdk-11-jdk && \
-    apt-get install -y maven && \
-    apt-get install -y git && \
-    apt-get clean
+RUN apk add --no-cache firefox
+RUN apk add --no-cache openjdk-11-jdk
+RUN apk add --no-cache maven
+RUN apk add --no-cache git
