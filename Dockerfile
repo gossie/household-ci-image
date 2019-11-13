@@ -1,8 +1,8 @@
-FROM alpine:3.10
+FROM ubuntu:18.04
 
-RUN apk add --no-cache firefox-esr
-RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community openjdk11
-RUN apk add --no-cache maven
-RUN apk add --no-cache git
-RUN apk add --no-cache nodejs
-RUN apk add --no-cache npm
+RUN apt-get update
+RUN apt-get install -y firefox
+RUN apt-get install -y openjdk-11-jdk
+RUN apt-get install -y maven
+RUN apt-get install -y git
+RUN apt-get clean
