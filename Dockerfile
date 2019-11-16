@@ -5,4 +5,5 @@ RUN apt-get install -y firefox
 RUN apt-get install -y openjdk-13-jdk
 RUN apt-get install -y maven
 RUN apt-get install -y git
+RUN apt-get install -y curl
 RUN apt-get clean
