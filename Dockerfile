@@ -1,9 +1,10 @@
-FROM postgres:12
+FROM ubuntu:19.10
 
 RUN apt update
 RUN apt install -y firefox
 RUN apt install -y openjdk-13-jdk
 RUN apt install -y maven
 RUN apt install -y git
-RUN apt install rabbitmq-server -y
+RUN apt install -y postgresql postgresql-contrib
+RUN apt install -y rabbitmq-server
 RUN apt clean
