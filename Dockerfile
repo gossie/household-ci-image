@@ -1,9 +1,9 @@
-FROM ubuntu:21.04
+FROM ubuntu:22.04
 
-RUN apt-get update
-RUN apt-get install -y chromium-browser
-RUN apt-get install -y openjdk-17-jdk
-RUN apt-get install -y maven
-RUN apt-get install -y git
-RUN apt-get install -y rabbitmq-server
-RUN apt-get clean
+RUN apt update
+RUN apt install -y chromium-browser
+RUN apt install -y openjdk-17-jdk
+RUN apt install -y maven
+RUN apt install -y git
+RUN apt install -y rabbitmq-server
+RUN apt clean
